@@ -1,0 +1,62 @@
+body{
+	background: url(../images/Smash-Bros-Space.jpg) center center fixed;
+	background-color: transparent;
+	font-family: 'Times New Roman', cursive;
+   
+}
+* {
+	box-sizing: border-box;
+}
+img { 
+    height: 140px;
+    width: 140px;
+}
+p {
+	color: red;
+	font-size: 17px;
+}
+.btn {
+    margin: 10px;
+	opacity: .8;
+	background-color: black;
+	border-color: whitesmoke;
+}
+label {
+	color: mintcream;
+	font-size: 25px;
+	margin-right: 10px;
+}
+.gifDiv{
+    float: left;
+    margin: 3px;
+}
+.container {
+	background-color: transparent;
+	padding: 20px;
+}
+.jumbotron {
+	background-color: transparent;
+	color: brown;
+}
+.jumbotron .h1, .jumbotron h1 {
+	text-align: center;
+	background-color: transparent;
+	color: white;
+}
+audio {
+	display: none;
+}
+#copyright{
+	font-size: 14px;
+	background-color: transparent;
+}
+div#footer {
+	background-color: transparent;
+	color: blueviolet;
+	clear: both;
+	margin-top: 40px;
+	position: center;
+	bottom: 0;
+	left: 0;
+	text-align: center;
+}
