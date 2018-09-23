@@ -1,7 +1,7 @@
 $( document ).ready(function() {
 	//first, create my original array that will (hopefully) be updated with the users choices.
 
-	var subj = ["Smash Bros 64", "Smash Bros Melee", "Smash Bros Brawl", "Smash Bros 3DS", "Smash Bros Wii U", "Smash Bros Ultimate (Coming Soon)", "Mario", "Kirby"];
+	var subj = ["Smash Bros 64", "Smash Bros Melee", "Smash Bros Brawl", "Smash Bros 3DS", "Smash Bros Wii U", "Mario", "Kirby", "Luigi"];
 
 	//Now, create a function that will display the gif buttons...loop throught the array
 
@@ -46,8 +46,8 @@ $( document ).ready(function() {
 	// This will show the results of the gifs
 
 	function displayGifs() {
-		var starwars = $(this).attr("data-name");
-		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + smashbros + "&api_key=QFIiD3HZspx02x93i3uxFzMlF0dTiA8N&limit=10";
+		var smashbros = $(this).attr("data-name");
+		var queryURL = "https://api.giphy.com/v1/gifs/search?q=" + smashbros + "&api_key=MOU5T0IuYAc0IC3pFsezPkg2OKXjsYGA&limit=10";
 		console.log(queryURL); // displays the constructed url
 
 		$.ajax({
@@ -65,10 +65,7 @@ $( document ).ready(function() {
 			for (var i = 0; i<results.length; i++){
 				//This will put the gifs in the specified div
 				var gifDiv = $("<div>");
-				//This is going to add the rating of the gif
-				gifDiv.addClass("gifDiv");
-				var gifRating = $("<p>").text("Rating " + results[i].rating);
-				gifDiv.append(gifRating);
+
 
 		//This will now pull the Gif from the site.
 

@@ -1,7 +1,7 @@
 body{
 	background: url(../images/Smash-Bros-Space.jpg) center center fixed;
 	background-color: transparent;
-	font-family: 'Times New Roman', cursive;
+	font-family: 'Times New Roman';
    
 }
 * {
@@ -28,11 +28,11 @@ label {
 }
 .gifDiv{
     float: left;
-    margin: 3px;
+    margin: 5px;
 }
 .container {
 	background-color: transparent;
-	padding: 20px;
+	padding: 24px;
 }
 .jumbotron {
 	background-color: transparent;
@@ -42,9 +42,6 @@ label {
 	text-align: center;
 	background-color: transparent;
 	color: white;
-}
-audio {
-	display: none;
 }
 #copyright{
 	font-size: 14px;
